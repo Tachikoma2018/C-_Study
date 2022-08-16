@@ -1,6 +1,8 @@
 #include<iostream>
 #include<array>
-#include<sstream>//for istringstream
+#include<string>//Method_1
+#include<sstream>//for istringstream, Method_2
+
 #define maxSize 10
 
 //模板函数 string 转换为 Type 类型
@@ -41,9 +43,11 @@ int main(){
         }
         if(!bool_)
             break;
+        // Method_1: include<string> 然后使用 stod 将 string 转为 double
+        donation[i] = stod(scanin[i]);
+        // Method_2: include<sstream> 然后使用 istringstream 重载运算符 >> 转换类型
         donation[i] = string2num<double>(scanin[i]);
         i++;
-
     }
 
     //calc average
