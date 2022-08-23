@@ -4,8 +4,8 @@
     *Version: 0.0.1
     *Date:
     *Description:
-        *定义程序文件：
-        *执行程序文件：
+        *定义程序文件：vector0.cpp
+        *执行程序文件：11.9.1.cpp
 *******************************************/
 #ifndef _VECTOR0_H_
 #define _VECTOR0_H_
